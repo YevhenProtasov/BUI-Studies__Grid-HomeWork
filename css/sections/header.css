@@ -1,0 +1,71 @@
+.center-header {
+  max-width: 1320px;
+  margin: 0 auto;
+}
+.header {
+  padding: 80px 20px;
+  display: grid;
+  grid-template-columns: 2fr 5fr 1fr;
+  grid-column-gap: 150px;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo-block {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  text-decoration: none;
+}
+.logo-title {
+  font: 400 22px/30px "Marko One", serif;
+  color: var(--primary-color);
+  padding-left: 6px;
+}
+menu {
+  list-style-type: none;
+  display: inline-grid;
+  grid-template-columns: auto auto auto auto auto;
+  grid-column-gap: 43px;
+}
+menu a {
+  text-decoration: none;
+  color: var(--dark-color);
+  font: 400 16px/19px "Rubik", sans-serif;
+}
+.nav-link:hover {
+  color: var(--primary-color);
+  cursor: pointer;
+}
+.nav-link-active {
+  color: var(--primary-color);
+  font-weight: 700;
+  border-bottom: 3px solid var(--primary-color);
+}
+.lang {
+  justify-self: flex-end;
+}
+.lang button {
+  background: none;
+  border: none;
+  font: 400 16px/30px "Rubik", sans-serif;
+  color: var(--dark-color);
+
+  padding-right: 28px;
+}
+.lang button::after {
+  content: "\e903";
+  font-family: "icomoon";
+  font-size: 28px;
+  color: var(--dark-color);
+
+  position: absolute;
+}
+.lang button:hover {
+  cursor: pointer;
+  border-radius: 5px;
+  background-color: var(--light-color);
+  color: var(--primary-color);
+}
+.lang button:hover::after {
+  color: var(--primary-color);
+  transition: all 0.3s ease;
+}

@@ -1,0 +1,85 @@
+:root {
+  --primary-color: #8cc5f9;
+  --secondary-color: #878abc;
+  --dark-color: #08090a;
+  --light-color: #f5fafe;
+  --white-color: #ffffff;
+  --separator-line-color: #eeeff2;
+  --grey-color: #afb5c0;
+  --gradient-color: #f8f8f8;
+
+  --main-gradient: linear-gradient(
+    180deg,
+    #f8f8f8 -45.04%,
+    rgba(248, 248, 248, 0) 88.56%
+  );
+
+  --box-shadow-color: 4px 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+* {
+  box-sizing: border-box;
+  color: var(--dark-color);
+  transition: all 0.3s ease;
+}
+a {
+  text-decoration: none;
+}
+h2 {
+  color: var(--primary-color);
+  font: 700 50px/70px "Rubik", sans-serif;
+}
+h3 {
+  font: 500 35px/50px "Rubik", sans-serif;
+}
+.subtitle {
+  font: 400 16px/30px "Rubik", sans-serif;
+  max-width: 776px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+h5 {
+  font: 500 18px/30px "Rubik", sans-serif;
+  margin-bottom: 16px;
+}
+h6 {
+  font: 500 18px/22px "Rubik", sans-serif;
+}
+
+.center-block {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.btn {
+  display: inline-block;
+  text-align: center;
+  min-width: 250px;
+  border-radius: 10px;
+  text-decoration: none;
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  font: 700 16px/25px "Rubik", sans-serif;
+  padding: 17px;
+}
+.btn:hover {
+  background-color: var(--secondary-color);
+}
+
+::-webkit-scrollbar {
+  width: 11px;
+}
+::-webkit-scrollbar-track {
+  background: var(--light-color);
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--primary-color);
+  border-radius: 13px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--secondary-color);
+}
+
+.soft-shadow {
+  box-shadow: 0 25px 30px rgba(0, 0, 0, 0.1);
+}

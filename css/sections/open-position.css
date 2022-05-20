@@ -1,0 +1,20 @@
+.open-position-section {
+  background-image: linear-gradient(
+    to top,
+    var(--gradient-color) 0%,
+    var(--gradient-color) 50%,
+    transparent 50%
+  );
+}
+.open-position__wrapper {
+  background-color: var(--white-color);
+  box-shadow: 0px 15px 50px rgba(0, 0, 0, 0.05);
+
+  border-radius: 10px;
+  padding: 50px 45px;
+
+  display: grid;
+  grid-template-columns: auto auto auto;
+  align-items: center;
+  gap: 44px;
+}

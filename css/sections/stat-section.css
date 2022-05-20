@@ -1,0 +1,65 @@
+.stat-section {
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 36px 0;
+  margin-bottom: 129px;
+  background-color: var(--white-color);
+}
+.stat-box {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: center;
+  align-items: center;
+}
+.stat-icon-holder {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  background-color: var(--primary-color);
+  margin: 36px;
+}
+.user-icon::after {
+  content: "\e902";
+  font-family: "icomoon";
+  font-size: 17px;
+  color: var(--white-color);
+
+  display: block;
+  text-align: center;
+  padding-top: 19px;
+}
+
+/* another value : font-size, padding-top */
+.location-icon::after {
+  content: "\e904";
+  font-family: "icomoon";
+  font-size: 23px;
+  color: var(--white-color);
+
+  display: block;
+  text-align: center;
+  padding-top: 14px;
+}
+
+.server-icon::after {
+  content: "\e901";
+  font-family: "icomoon";
+  font-size: 17px;
+  color: var(--white-color);
+
+  display: block;
+  text-align: center;
+  padding-top: 19px;
+}
+.stat-text span {
+  font: 700 25px/30px "Rubik", sans-serif;
+  color: #08090a;
+}
+.stat-text p {
+  font: 400 20px/30px "Rubik", sans-serif;
+}
+.stat-border {
+  border-left: 2px solid var(--separator-line-color);
+  border-right: 2px solid var(--separator-line-color);
+}

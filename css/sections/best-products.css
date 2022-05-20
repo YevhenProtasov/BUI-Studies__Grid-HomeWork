@@ -1,0 +1,48 @@
+.best-products {
+  padding-top: 38px;
+  padding-bottom: 66px;
+  background: var(--main-gradient);
+}
+.best-product-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 52px 30px;
+}
+.best-product__title {
+  grid-column: 1 / span 3;
+  text-align: center;
+}
+.best-product__title .subtitle {
+  padding: 21px 0 28px;
+}
+.product-card {
+  min-height: 355px;
+  display: grid;
+  grid-auto-rows: 39px auto auto;
+  row-gap: 20px;
+  background-color: var(--white-color);
+  border-radius: 24px;
+  padding: 20px 27px 37px 36px;
+  box-shadow: var(--box-shadow-color);
+}
+.product-card p {
+  font: 400 18px/30px "Rubik", sans-serif;
+}
+.product-btn {
+  min-width: 147px;
+  font: 500 16px/30px "Rubik", sans-serif;
+  color: var(--primary-color);
+  border: 2px solid var(--primary-color);
+  border-radius: 47px;
+  background: none;
+}
+.product-btn:hover {
+  cursor: pointer;
+  background-color: var(--secondary-color);
+  color: var(--white-color);
+  border: 2px solid var(--secondary-color);
+  transition: all 0.3s ease;
+}
+.product-btn-holder {
+  align-self: flex-end;
+}
